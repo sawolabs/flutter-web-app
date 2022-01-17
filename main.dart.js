@@ -15167,12 +15167,13 @@ _.c=a
 _.d=b
 _.e=c
 _.a=d},
-GU:function GU(a,b,c){var _=this
+GU:function GU(a,b,c,d){var _=this
 _.d=a
 _.e=b
+_.f=c
 _.r=$
 _.a=_.x=null
-_.b=c
+_.b=d
 _.c=null},
 YX:function YX(a){this.a=a},
 YY:function YY(){},
@@ -47649,10 +47650,10 @@ L(a,b){return this.e.$2(b,this.f)}}
 A.Su.prototype={}
 A.Sv.prototype={}
 A.ru.prototype={
-aJ(){return new A.GU(this.c,this.d,B.m)}}
+aJ(){return new A.GU(this.c,this.d,this.e,B.m)}}
 A.GU.prototype={
 bo(){var s=this
-s.x='<html lang="en">\n    <head>\n        <meta charset="UTF-8" />\n        <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n        <title>Document</title>\n        <style>body {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}</style>\n<script src="https://websdk.sawolabs.com/sawo.min.js"></script>\n    </head>\n    <body>\n        <div id="sawo-container" style="height: 300px; width: 300px;"></div>\n        <div id="status"></div>\n        \n        <script>\n            var config = {\n                containerID: "sawo-container",\n                identifierType: \''+A.d(s.e,"identifierType")+"',\n                apiKey: '"+A.d(s.d,"apiKey")+'\', \n                onSuccess: (payload) => {\n                    document.getElementById("status").innerHTML =\n                        "Login Success";\n                       console.log(payload);\n                },\n            };\n            var sawo = new Sawo(config);\n            sawo.showForm();\n\n            console.log(window.location.hostname);\n            \n        </script>\n    </body>\n</html>'
+s.x='<html lang="en">\n    <head>\n        <meta charset="UTF-8" />\n        <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n        <title>Document</title>\n        <style>\n            body {\n                display: flex;\n                flex-direction: column;\n                align-items: center;\n                justify-content: center;\n            }\n        </style>\n    </head>\n    <body>\n        <div id="sawo-container" style="height: 300px; width: 300px;"></div>\n        <div id="status"></div>\n        <script src="https://websdk.sawolabs.com/sawo.min.js"></script>\n        <script>\n            var config = {\n                containerID: "sawo-container",\n                identifierType: "'+A.d(s.e,"identifierType")+'",\n                apiKey: "'+A.d(s.d,"apiKey")+'",\n                secretKey: "'+A.d(s.f,"secretKey")+'",\n                onSuccess: (payload) => {\n                    document.getElementById("status").innerHTML = "Login Success";\n                    \n                },\n            };\n            var sawo = new Sawo(config);\n            sawo.showForm();\n        </script>\n    </body>\n</html>'
 s.bH()},
 p(a){A.d(this.r,"webviewController").mA(0)
 this.bw(0)},
@@ -48128,8 +48129,8 @@ A.yu.prototype={
 L(a,b){var s=null
 return A.a7g(A.aeW(A.aif("Sawo login example")),A.wJ(new A.rC(s),s,s),s)}}
 A.rC.prototype={
-aJ(){var s="0f6a660b-edc8-48f0-905d-359da3f18d4c"
-return new A.GZ(new A.Su(s,"6180be42d487f774297877a1RUR8P9FyAiDPpFuru4dfdpQl"),new A.Sv(s,"61d5966fa378730ec22c4a0ciA6ItuG7x4n5c9VbX3TiEuVW","email"),B.m)}}
+aJ(){var s="5e6b525a-9337-408d-aa1d-c6b8d720f96d",r="61e526b1a378730ec22c6108gwTfCC67EGtRl7yjo5fj5YcM"
+return new A.GZ(new A.Su(s,r),new A.Sv(s,r,"email"),B.m)}}
 A.GZ.prototype={
 L(a,b){var s=this.e
 return new A.ru(s.a,s.c,s.b,null)}}
