@@ -48129,8 +48129,8 @@ A.yu.prototype={
 L(a,b){var s=null
 return A.a7g(A.aeW(A.aif("Sawo login example")),A.wJ(new A.rC(s),s,s),s)}}
 A.rC.prototype={
-aJ(){var s="5e6b525a-9337-408d-aa1d-c6b8d720f96d",r="61e526b1a378730ec22c6108gwTfCC67EGtRl7yjo5fj5YcM"
-return new A.GZ(new A.Su(s,r),new A.Sv(s,r,"email"),B.m)}}
+aJ(){var s="61e526b1a378730ec22c6108gwTfCC67EGtRl7yjo5fj5YcM"
+return new A.GZ(new A.Su("5e6b525a-9337-408d-aa1d-c6b8d720f96d",s),new A.Sv("d8838a0b-904b-4042-9116-f51f8c6c998c",s,"email"),B.m)}}
 A.GZ.prototype={
 L(a,b){var s=this.e
 return new A.ru(s.a,s.c,s.b,null)}}
