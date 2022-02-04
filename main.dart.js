@@ -15159,21 +15159,25 @@ _.c=c
 _.a=d},
 Su:function Su(a,b){this.a=a
 this.b=b},
-Sv:function Sv(a,b,c){this.a=a
-this.b=b
-this.c=c},
-ru:function ru(a,b,c,d){var _=this
+Sv:function Sv(a,b,c,d){var _=this
+_.a=a
+_.b=b
+_.c=c
+_.d=d},
+ru:function ru(a,b,c,d,e){var _=this
 _.c=a
 _.d=b
 _.e=c
-_.a=d},
-GU:function GU(a,b,c,d){var _=this
+_.f=d
+_.a=e},
+GU:function GU(a,b,c,d,e){var _=this
 _.d=a
 _.e=b
 _.f=c
-_.r=$
-_.a=_.x=null
-_.b=d
+_.r=d
+_.x=$
+_.a=_.y=null
+_.b=e
 _.c=null},
 YX:function YX(a){this.a=a},
 YY:function YY(){},
@@ -47650,18 +47654,19 @@ L(a,b){return this.e.$2(b,this.f)}}
 A.Su.prototype={}
 A.Sv.prototype={}
 A.ru.prototype={
-aJ(){return new A.GU(this.c,this.d,this.e,B.m)}}
+aJ(){var s=this
+return new A.GU(s.c,s.d,s.e,s.f,B.m)}}
 A.GU.prototype={
 bo(){var s=this
-s.x='<html lang="en">\n    <head>\n        <meta charset="UTF-8" />\n        <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n        <title>Document</title>\n        <style>\n            body {\n                display: flex;\n                flex-direction: column;\n                align-items: center;\n                justify-content: center;\n            }\n        </style>\n    </head>\n    <body>\n        <div id="sawo-container" style="height: 300px; width: 300px;"></div>\n        <div id="status"></div>\n        <script src="https://websdk.sawolabs.com/sawo.min.js"></script>\n        <script>\n            var config = {\n                containerID: "sawo-container",\n                identifierType: "'+A.d(s.e,"identifierType")+'",\n                apiKey: "'+A.d(s.d,"apiKey")+'",\n                secretKey: "'+A.d(s.f,"secretKey")+'",\n                onSuccess: (payload) => {\n                    document.getElementById("status").innerHTML = "Login Success";\n                    \n                },\n            };\n            var sawo = new Sawo(config);\n            sawo.showForm();\n        </script>\n    </body>\n</html>'
+s.y='<html lang="en">\n    <head>\n        <meta charset="UTF-8" />\n        <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n        <title>Document</title>\n        <style>\n            body {\n                display: flex;\n                flex-direction: column;\n                align-items: center;\n                justify-content: center;\n            }\n        </style>\n    </head>\n    <body>\n        <div id="sawo-container" style="height: 300px; width: 300px;"></div>\n        <div id="status"></div>\n        <script src="https://websdk.sawolabs.com/sawo.min.js"></script>\n        <script>\n            window.location.hostname = "'+A.d(s.r,"hostName")+'";\n            var config = {\n                containerID: "sawo-container",\n                identifierType: "'+A.d(s.e,"identifierType")+'",\n                apiKey: "'+A.d(s.d,"apiKey")+'",\n                secretKey: "'+A.d(s.f,"secretKey")+'",\n                onSuccess: (payload) => {\n                    document.getElementById("status").innerHTML = "Login Success";\n                    \n                },\n            };\n            var sawo = new Sawo(config);\n            sawo.showForm();\n        </script>\n    </body>\n</html>'
 s.bH()},
-p(a){A.d(this.r,"webviewController").mA(0)
+p(a){A.d(this.x,"webviewController").mA(0)
 this.bw(0)},
 L(a,b){var s=null
 return A.a7g(s,A.wJ(A.p6(s,A.afs(A.a([A.p6(s,this.Kn(),s,s,s,s,s,s,s)],t.p),B.lW),s,s,s,s,s,B.wP,s),s,s),!1)},
-Kn(){return new A.tt(this.x,B.r0,this.c.a2(t.w).f.a.a,360,new A.YX(this),B.fN,new A.YY(),new A.YZ(),new A.Z_(),B.tR,B.If)}}
+Kn(){return new A.tt(this.y,B.r0,this.c.a2(t.w).f.a.a,360,new A.YX(this),B.fN,new A.YY(),new A.YZ(),new A.Z_(),B.tR,B.If)}}
 A.YX.prototype={
-$1(a){return this.a.r=a},
+$1(a){return this.a.x=a},
 $S:284}
 A.YY.prototype={
 $1(a){return A.vR().$1("")},
@@ -48130,10 +48135,10 @@ L(a,b){var s=null
 return A.a7g(A.aeW(A.aif("Sawo login example")),A.wJ(new A.rC(s),s,s),s)}}
 A.rC.prototype={
 aJ(){var s="61e526b1a378730ec22c6108gwTfCC67EGtRl7yjo5fj5YcM"
-return new A.GZ(new A.Su("5e6b525a-9337-408d-aa1d-c6b8d720f96d",s),new A.Sv("d8838a0b-904b-4042-9116-f51f8c6c998c",s,"email"),B.m)}}
+return new A.GZ(new A.Su("5e6b525a-9337-408d-aa1d-c6b8d720f96d",s),new A.Sv("d8838a0b-904b-4042-9116-f51f8c6c998c",s,"email","sawolabs.github.io"),B.m)}}
 A.GZ.prototype={
 L(a,b){var s=this.e
-return new A.ru(s.a,s.c,s.b,null)}}
+return new A.ru(s.a,s.c,s.b,s.d,null)}}
 A.UC.prototype={
 gl(a){return this.c.length},
 gUf(a){return this.b.length},
